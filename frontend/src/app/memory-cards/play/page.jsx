@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import GameBoard from "../../components/GameBoard";
-import { fetchCards } from "../../utils/fetchCards";
+import GameBoard from "@/components/GameBoard";
+import { fetchCards } from "../../../utils/fetchCards";
 
 export default function MemoryCardsPlayPage() {
   const searchParams = useSearchParams();
