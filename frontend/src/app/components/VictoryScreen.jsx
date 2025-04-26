@@ -11,7 +11,7 @@ export default function VictoryScreen({ difficulty }) {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const res = await fetch(`/api/feedback?difficulty=${difficulty}&tries=10&time=90`);
+        const res = await fetch(`http://localhost:8000/api/feedback?difficulty=${difficulty}&tries=10&time=90`);
         const data = await res.json();
         setFeedback(data.feedback || "Great job, you're amazing!");
       } catch (error) {

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends,Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine, Column, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
@@ -10,7 +10,8 @@ import random
 import logging
 from datetime import datetime
 from services.game_service import get_all_levels, get_level_by_id
-
+import json
+import requests
 
 # Set up logging
 logging.basicConfig(
@@ -223,7 +224,53 @@ async def level_by_id(game_name: str, level_id: int):
     if level:
         return level
     raise HTTPException(status_code=404, detail="Level not found")
+with open("./games/memory_card/memory-cards.json", "r") as f:
+    memory_cards = json.load(f)
 
+# Endpoint to get all cards
+@app.get("/api/cards")
+async def get_cards():
+    return memory_cards
+
+
+# Endpoint for basic healthcheck
+@app.get("/api/health")
+def health_check():
+    return {"status": "OK"}
+
+# Endpoint to generate feedback from Pollinations AI
+@app.get("/api/feedback")
+def generate_feedback(difficulty: str = Query(...), tries: int = Query(...), time: int = Query(...)):
+    """
+    Generate a motivational feedback text for the kid after winning a game.
+    difficulty: easy / medium / hard
+    tries: number of attempts
+    time: time taken in seconds
+    """
+
+    prompt = (
+        f"Create a motivational and positive message for a kid who just completed a {difficulty} logic puzzle. "
+        f"They completed it in {tries} tries and {time} seconds. "
+        "Make it super encouraging, happy, and age-appropriate (6 to 10 years old). Max 2 sentences."
+    )
+
+    try:
+        # Using Pollinations API (free and open, no key needed)
+        response = requests.get(
+            f"https://api.pollinations.ai/text2text",
+            params={"prompt": prompt},
+            timeout=10
+        )
+        data = response.json()
+
+        # Pollinations returns { "result": "Generated text..." }
+        feedback_text = data.get("result", "Great job, you're amazing!")
+
+        return {"feedback": feedback_text}
+
+    except Exception as e:
+        print(f"Error generating feedback: {e}")
+        return {"feedback": "Great job! You're an awesome programmer!"}
 # Run the application with uvicorn
 if __name__ == "__main__":
     import uvicorn

@@ -1,0 +1,282 @@
+[
+    {
+      "id": "if",
+      "type": "term",
+      "content": "IF",
+      "difficulty": "easy"
+    },
+    {
+      "id": "if",
+      "type": "description",
+      "content": "Makes a choice based on a rule.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "loop",
+      "type": "term",
+      "content": "LOOP",
+      "difficulty": "easy"
+    },
+    {
+      "id": "loop",
+      "type": "description",
+      "content": "Repeats something again and again!",
+      "difficulty": "easy"
+    },
+    {
+      "id": "start",
+      "type": "term",
+      "content": "START",
+      "difficulty": "easy"
+    },
+    {
+      "id": "start",
+      "type": "description",
+      "content": "Where your code begins its adventure.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "stop",
+      "type": "term",
+      "content": "STOP",
+      "difficulty": "easy"
+    },
+    {
+      "id": "stop",
+      "type": "description",
+      "content": "The place your code takes a nap.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "move",
+      "type": "term",
+      "content": "MOVE",
+      "difficulty": "easy"
+    },
+    {
+      "id": "move",
+      "type": "description",
+      "content": "Makes your character walk or jump!",
+      "difficulty": "easy"
+    },
+    {
+      "id": "wait",
+      "type": "term",
+      "content": "WAIT",
+      "difficulty": "easy"
+    },
+    {
+      "id": "wait",
+      "type": "description",
+      "content": "Takes a small pause before acting.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "jump",
+      "type": "term",
+      "content": "JUMP",
+      "difficulty": "easy"
+    },
+    {
+      "id": "jump",
+      "type": "description",
+      "content": "Makes a big leap up!",
+      "difficulty": "easy"
+    },
+    {
+      "id": "say",
+      "type": "term",
+      "content": "SAY",
+      "difficulty": "easy"
+    },
+    {
+      "id": "say",
+      "type": "description",
+      "content": "Makes your character talk!",
+      "difficulty": "easy"
+    },
+  
+    {
+      "id": "function",
+      "type": "term",
+      "content": "FUNCTION",
+      "difficulty": "medium"
+    },
+    {
+      "id": "function",
+      "type": "description",
+      "content": "A reusable box of actions.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "variable",
+      "type": "term",
+      "content": "VARIABLE",
+      "difficulty": "medium"
+    },
+    {
+      "id": "variable",
+      "type": "description",
+      "content": "A little container for storing information.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "boolean",
+      "type": "term",
+      "content": "BOOLEAN",
+      "difficulty": "medium"
+    },
+    {
+      "id": "boolean",
+      "type": "description",
+      "content": "A true or false answer.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "array",
+      "type": "term",
+      "content": "ARRAY",
+      "difficulty": "medium"
+    },
+    {
+      "id": "array",
+      "type": "description",
+      "content": "A magic list that holds lots of stuff!",
+      "difficulty": "medium"
+    },
+    {
+      "id": "input",
+      "type": "term",
+      "content": "INPUT",
+      "difficulty": "medium"
+    },
+    {
+      "id": "input",
+      "type": "description",
+      "content": "Something the player gives to the game.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "output",
+      "type": "term",
+      "content": "OUTPUT",
+      "difficulty": "medium"
+    },
+    {
+      "id": "output",
+      "type": "description",
+      "content": "What the game shows back to the player!",
+      "difficulty": "medium"
+    },
+    {
+      "id": "repeat_until",
+      "type": "term",
+      "content": "REPEAT UNTIL",
+      "difficulty": "medium"
+    },
+    {
+      "id": "repeat_until",
+      "type": "description",
+      "content": "Keep going until something is true!",
+      "difficulty": "medium"
+    },
+    {
+      "id": "event",
+      "type": "term",
+      "content": "EVENT",
+      "difficulty": "medium"
+    },
+    {
+      "id": "event",
+      "type": "description",
+      "content": "Something fun that happens when you click or move.",
+      "difficulty": "medium"
+    },
+  
+ 
+    {
+      "id": "recursion",
+      "type": "term",
+      "content": "RECURSION",
+      "difficulty": "hard"
+    },
+    {
+      "id": "recursion",
+      "type": "description",
+      "content": "When something calls itself to solve a problem!",
+      "difficulty": "hard"
+    },
+    {
+      "id": "algorithm",
+      "type": "term",
+      "content": "ALGORITHM",
+      "difficulty": "hard"
+    },
+    {
+      "id": "algorithm",
+      "type": "description",
+      "content": "A special recipe to solve a challenge.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "inheritance",
+      "type": "term",
+      "content": "INHERITANCE",
+      "difficulty": "hard"
+    },
+    {
+      "id": "inheritance",
+      "type": "description",
+      "content": "Passing abilities from one thing to another.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "class",
+      "type": "term",
+      "content": "CLASS",
+      "difficulty": "hard"
+    },
+    {
+      "id": "class",
+      "type": "description",
+      "content": "A blueprint to build many similar things!",
+      "difficulty": "hard"
+    },
+    {
+      "id": "debug",
+      "type": "term",
+      "content": "DEBUG",
+      "difficulty": "hard"
+    },
+    {
+      "id": "debug",
+      "type": "description",
+      "content": "Fixing sneaky mistakes in your code!",
+      "difficulty": "hard"
+    },
+    {
+      "id": "parameter",
+      "type": "term",
+      "content": "PARAMETER",
+      "difficulty": "hard"
+    },
+    {
+      "id": "parameter",
+      "type": "description",
+      "content": "An ingredient you send to a function.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "exception",
+      "type": "term",
+      "content": "EXCEPTION",
+      "difficulty": "hard"
+    },
+    {
+      "id": "exception",
+      "type": "description",
+      "content": "A special message when something goes wrong.",
+      "difficulty": "hard"
+    }
+  ]
+  

@@ -2,7 +2,7 @@
 
 export async function fetchCards(difficulty) {
     try {
-      const response = await fetch("/api/cards");
+      const response = await fetch("http://localhost:8000/api/cards");
       const allCards = await response.json();
   
       // Filter by difficulty
