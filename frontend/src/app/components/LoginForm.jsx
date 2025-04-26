@@ -1,9 +1,9 @@
-"use client"
-import { useState, useEffect } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+'use client';
+
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const avatars = ['👧', '👦', '🧑‍🚀', '👩‍🎨', '🧙‍♂️', '🦸‍♀️'];
+const API_URL = 'http://localhost:8000'; // Update this to your FastAPI server URL
 
 export default function LoginForm() {
   const [username, setUsername] = useState('');
@@ -11,69 +11,89 @@ export default function LoginForm() {
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
+  
+  const avatars = ['👧', '👦', '🧑‍🚀', '👩‍🎨', '🧙‍♂️', '🦸‍♀️'];
 
-  const validateUsername = (name) => {
-    const regex = /^[a-zA-Z0-9]{3,12}$/;
-    return regex.test(name);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!username || !selectedAvatar) {
+      setError('Please enter a username and select an avatar');
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch(`${API_URL}/api/session/create`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username,
+          avatar: selectedAvatar,
+        }),
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to create session');
+      }
+      
+      const userData = await response.json();
+      
+      // Store session ID in localStorage
+      localStorage.setItem('miniMindsUser', JSON.stringify(userData));
+      
+      // Redirect to games page
+      router.push('/games');
+    } catch (error) {
+      setError(error.message);
+      setIsSubmitting(false);
+    }
+  };
+  
+  const handleGuestLogin = async () => {
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch(`${API_URL}/api/session/guest`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to create guest session');
+      }
+      
+      const userData = await response.json();
+      
+      // Store session ID in localStorage
+      localStorage.setItem('miniMindsUser', JSON.stringify(userData));
+      
+      // Redirect to games page
+      router.push('/games');
+    } catch (error) {
+      setError(error.message);
+      setIsSubmitting(false);
+    }
   };
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
     if (error) setError('');
   };
-
   const handleAvatarSelect = (avatar) => {
     setSelectedAvatar(avatar);
     if (error) setError('');
   };
 
-  const generateGuestInfo = () => {
-    const guestNumber = Math.floor(1000 + Math.random() * 9000);
-    const guestName = `Guest${guestNumber}`;
-    const randomAvatar = avatars[Math.floor(Math.random() * avatars.length)];
-    
-    return { username: guestName, avatar: randomAvatar };
-  };
-
-  const saveUserAndRedirect = (userInfo) => {
-    const userData = {
-      username: userInfo.username,
-      avatar: userInfo.avatar,
-      sessionId: uuidv4()
-    };
-    
-    localStorage.setItem('miniMindsUser', JSON.stringify(userData));
-    
-    // Simulate loading for animation
-    setIsSubmitting(true);
-    setTimeout(() => {
-      router.push('/games');
-    }, 1200);
-  };
-
-  const handleGuestLogin = () => {
-    const guestInfo = generateGuestInfo();
-    saveUserAndRedirect(guestInfo);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (!validateUsername(username)) {
-      setError('Username must be 3-12 letters or numbers');
-      return;
-    }
-    
-    if (!selectedAvatar) {
-      setError('Please select an avatar');
-      return;
-    }
-    
-    saveUserAndRedirect({ username, avatar: selectedAvatar });
-  };
-
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-100 to-blue-100 p-4">
+    <div className=" flex flex-col items-center justify-center bg-gradient-to-b from-purple-100 to-blue-100 p-4">
       <div className="w-full max-w-md">
         <div className={`bg-white rounded-3xl shadow-xl overflow-hidden transform transition-all duration-300 ${isSubmitting ? 'scale-95 opacity-80' : 'scale-100'}`}>
           
