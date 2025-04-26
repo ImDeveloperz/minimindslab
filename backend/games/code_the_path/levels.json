@@ -1,0 +1,1643 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 0
+    },
+    "goal": {
+      "x": 2,
+      "y": 4
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 2
+      },
+      {
+        "x": 1,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 3
+    },
+    "goal": {
+      "x": 3,
+      "y": 3
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 4
+      },
+      {
+        "x": 1,
+        "y": 1
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 2
+    },
+    "goal": {
+      "x": 2,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 2,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 0,
+      "y": 4
+    },
+    "goal": {
+      "x": 2,
+      "y": 4
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 1
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 9,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 2
+    },
+    "goal": {
+      "x": 2,
+      "y": 2
+    },
+    "obstacles": [],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 9,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 0,
+      "y": 2
+    },
+    "goal": {
+      "x": 4,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 4,
+      "y": 2
+    },
+    "goal": {
+      "x": 3,
+      "y": 4
+    },
+    "obstacles": [
+      {
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 3
+    },
+    "goal": {
+      "x": 4,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 0,
+        "y": 2
+      },
+      {
+        "x": 0,
+        "y": 1
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 4
+    },
+    "goal": {
+      "x": 0,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 0,
+      "y": 4
+    },
+    "goal": {
+      "x": 1,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 2
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 11,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 4
+    },
+    "goal": {
+      "x": 3,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 1,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 12,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 3,
+      "y": 0
+    },
+    "goal": {
+      "x": 1,
+      "y": 4
+    },
+    "obstacles": [],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 13,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 2,
+      "y": 1
+    },
+    "goal": {
+      "x": 4,
+      "y": 0
+    },
+    "obstacles": [],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 14,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 3,
+      "y": 3
+    },
+    "goal": {
+      "x": 0,
+      "y": 1
+    },
+    "obstacles": [],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 15,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 1,
+      "y": 0
+    },
+    "goal": {
+      "x": 0,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 2
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 16,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 4,
+      "y": 3
+    },
+    "goal": {
+      "x": 0,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 2
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 17,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 3,
+      "y": 4
+    },
+    "goal": {
+      "x": 2,
+      "y": 2
+    },
+    "obstacles": [],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 9,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 18,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 4,
+      "y": 0
+    },
+    "goal": {
+      "x": 2,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 2,
+        "y": 1
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 19,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 0,
+      "y": 4
+    },
+    "goal": {
+      "x": 0,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 20,
+    "difficulty": "easy",
+    "gridSize": 5,
+    "start": {
+      "x": 4,
+      "y": 3
+    },
+    "goal": {
+      "x": 3,
+      "y": 4
+    },
+    "obstacles": [],
+    "features": {
+      "loopsAllowed": false,
+      "conditionalsAllowed": false,
+      "commandLimit": 8,
+      "previewPath": true
+    }
+  },
+  {
+    "id": 21,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 3,
+      "y": 0
+    },
+    "goal": {
+      "x": 2,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 0,
+        "y": 3
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 22,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 5,
+      "y": 2
+    },
+    "goal": {
+      "x": 4,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 1,
+        "y": 5
+      },
+      {
+        "x": 5,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 5,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 23,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 0,
+      "y": 2
+    },
+    "goal": {
+      "x": 2,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 3
+      },
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 12,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 24,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 2,
+      "y": 1
+    },
+    "goal": {
+      "x": 3,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 2,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 12,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 25,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 2,
+      "y": 2
+    },
+    "goal": {
+      "x": 1,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 0,
+        "y": 2
+      },
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 0,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 12,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 26,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 0,
+      "y": 5
+    },
+    "goal": {
+      "x": 5,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 3
+      },
+      {
+        "x": 0,
+        "y": 3
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 11,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 27,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 5,
+      "y": 5
+    },
+    "goal": {
+      "x": 4,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 1,
+        "y": 3
+      },
+      {
+        "x": 3,
+        "y": 2
+      },
+      {
+        "x": 4,
+        "y": 0
+      },
+      {
+        "x": 5,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 28,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 0,
+      "y": 0
+    },
+    "goal": {
+      "x": 1,
+      "y": 3
+    },
+    "obstacles": [
+      {
+        "x": 1,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 12,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 29,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 2,
+      "y": 2
+    },
+    "goal": {
+      "x": 5,
+      "y": 5
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 4
+      },
+      {
+        "x": 4,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 12,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 30,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 4,
+      "y": 1
+    },
+    "goal": {
+      "x": 5,
+      "y": 1
+    },
+    "obstacles": [
+      {
+        "x": 1,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 11,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 31,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 0,
+      "y": 1
+    },
+    "goal": {
+      "x": 5,
+      "y": 1
+    },
+    "obstacles": [
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 4,
+        "y": 2
+      },
+      {
+        "x": 5,
+        "y": 4
+      },
+      {
+        "x": 5,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 32,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 5,
+      "y": 0
+    },
+    "goal": {
+      "x": 0,
+      "y": 1
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 4
+      },
+      {
+        "x": 1,
+        "y": 4
+      },
+      {
+        "x": 1,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 11,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 33,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 0,
+      "y": 2
+    },
+    "goal": {
+      "x": 0,
+      "y": 4
+    },
+    "obstacles": [
+      {
+        "x": 5,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 11,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 34,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 1,
+      "y": 3
+    },
+    "goal": {
+      "x": 4,
+      "y": 1
+    },
+    "obstacles": [
+      {
+        "x": 5,
+        "y": 2
+      },
+      {
+        "x": 1,
+        "y": 3
+      },
+      {
+        "x": 4,
+        "y": 1
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 10,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 35,
+    "difficulty": "medium",
+    "gridSize": 6,
+    "start": {
+      "x": 3,
+      "y": 1
+    },
+    "goal": {
+      "x": 2,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 2,
+        "y": 2
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": false,
+      "commandLimit": 11,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 36,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 1,
+      "y": 2
+    },
+    "goal": {
+      "x": 5,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 2,
+        "y": 7
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "moving": true
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 15,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 37,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 6,
+      "y": 3
+    },
+    "goal": {
+      "x": 0,
+      "y": 6
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 2,
+        "moving": true
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "moving": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 14,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 38,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 1,
+      "y": 5
+    },
+    "goal": {
+      "x": 7,
+      "y": 7
+    },
+    "obstacles": [
+      {
+        "x": 6,
+        "y": 4
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 2,
+        "y": 5
+      },
+      {
+        "x": 5,
+        "y": 4
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 15,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 39,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 3,
+      "y": 2
+    },
+    "goal": {
+      "x": 2,
+      "y": 2
+    },
+    "obstacles": [
+      {
+        "x": 2,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "moving": true
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 14,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 40,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 4,
+      "y": 3
+    },
+    "goal": {
+      "x": 6,
+      "y": 4
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 4
+      },
+      {
+        "x": 7,
+        "y": 7
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 1
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 13,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 41,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 4,
+      "y": 2
+    },
+    "goal": {
+      "x": 2,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 7,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 2,
+        "y": 4
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "moving": true
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 13,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 42,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 0,
+      "y": 4
+    },
+    "goal": {
+      "x": 1,
+      "y": 3
+    },
+    "obstacles": [
+      {
+        "x": 6,
+        "y": 6
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "moving": true
+      },
+      {
+        "x": 3,
+        "y": 5
+      },
+      {
+        "x": 5,
+        "y": 6
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 14,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 43,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 4,
+      "y": 3
+    },
+    "goal": {
+      "x": 6,
+      "y": 3
+    },
+    "obstacles": [
+      {
+        "x": 6,
+        "y": 5,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 1,
+        "y": 2
+      },
+      {
+        "x": 3,
+        "y": 1
+      },
+      {
+        "x": 3,
+        "y": 3
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 13,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 44,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 3,
+      "y": 2
+    },
+    "goal": {
+      "x": 3,
+      "y": 7
+    },
+    "obstacles": [
+      {
+        "x": 5,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 13,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 45,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 4,
+      "y": 4
+    },
+    "goal": {
+      "x": 2,
+      "y": 5
+    },
+    "obstacles": [
+      {
+        "x": 5,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 6
+      },
+      {
+        "x": 7,
+        "y": 5
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 15,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 46,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 6,
+      "y": 7
+    },
+    "goal": {
+      "x": 3,
+      "y": 4
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 5
+      },
+      {
+        "x": 0,
+        "y": 7
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 6
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 13,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 47,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 5,
+      "y": 1
+    },
+    "goal": {
+      "x": 6,
+      "y": 1
+    },
+    "obstacles": [
+      {
+        "x": 6,
+        "y": 5
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "moving": true
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 15,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 48,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 5,
+      "y": 5
+    },
+    "goal": {
+      "x": 4,
+      "y": 0
+    },
+    "obstacles": [
+      {
+        "x": 3,
+        "y": 0
+      },
+      {
+        "x": 6,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 7
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "moving": true
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "moving": true
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 14,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 49,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 7,
+      "y": 2
+    },
+    "goal": {
+      "x": 7,
+      "y": 6
+    },
+    "obstacles": [
+      {
+        "x": 4,
+        "y": 6,
+        "moving": true
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "moving": true
+      },
+      {
+        "x": 7,
+        "y": 1
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 7,
+        "y": 0
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 14,
+      "previewPath": false
+    }
+  },
+  {
+    "id": 50,
+    "difficulty": "hard",
+    "gridSize": 8,
+    "start": {
+      "x": 3,
+      "y": 5
+    },
+    "goal": {
+      "x": 7,
+      "y": 5
+    },
+    "obstacles": [
+      {
+        "x": 6,
+        "y": 7,
+        "moving": true
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "moving": true
+      },
+      {
+        "x": 0,
+        "y": 6
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "moving": true
+      },
+      {
+        "x": 6,
+        "y": 5
+      },
+      {
+        "x": 3,
+        "y": 2
+      }
+    ],
+    "features": {
+      "loopsAllowed": true,
+      "conditionalsAllowed": true,
+      "commandLimit": 14,
+      "previewPath": false
+    }
+  }
+]

@@ -9,6 +9,8 @@ import uuid
 import random
 import logging
 from datetime import datetime
+from services.game_service import get_all_levels, get_level_by_id
+
 
 # Set up logging
 logging.basicConfig(
@@ -201,10 +203,26 @@ async def get_stats(db: Session = Depends(get_db)):
         "avatars_distribution": avatars_distribution
     }
 
+
 @app.get("/api/health")
 async def health_check():
     """Simple health check endpoint"""
     return {"status": "ok", "timestamp": datetime.now().isoformat()}
+
+
+@app.get("/api/{game_name}/levels")
+async def all_levels(game_name: str):
+    levels = get_all_levels(game_name)
+    if levels:
+        return levels
+    raise HTTPException(status_code=404, detail="Game not found")
+
+@app.get("/api/{game_name}/levels/{level_id}")
+async def level_by_id(game_name: str, level_id: int):
+    level = get_level_by_id(game_name, level_id)
+    if level:
+        return level
+    raise HTTPException(status_code=404, detail="Level not found")
 
 # Run the application with uvicorn
 if __name__ == "__main__":
