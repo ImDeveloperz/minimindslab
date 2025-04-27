@@ -4,17 +4,22 @@ import { useRouter } from 'next/navigation';
 import Head from 'next/head';
 
 export default function GamesPage() {
+  const games = [
+    { name: "Memory Cards", path: "/memory-cards" },
+    { name: "Pattern Builder", path: "/pattern-builder" },
+  ];
+
   const [userData, setUserData] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
     const storedUser = localStorage.getItem('miniMindsUser');
-    
+
     if (!storedUser) {
       router.push('/login');
       return;
     }
-    
+
     setUserData(JSON.parse(storedUser));
   }, [router]);
 
@@ -33,7 +38,7 @@ export default function GamesPage() {
         <meta name="description" content="Play and learn with MiniMinds Lab games" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <main className="min-h-screen bg-gradient-to-b from-purple-100 to-blue-100 p-6">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl shadow-xl p-6 mb-8">
@@ -46,22 +51,25 @@ export default function GamesPage() {
                 <p className="text-indigo-600">Ready to learn something new today?</p>
               </div>
             </div>
-            
+
             <p className="text-center text-gray-600 py-8 text-xl">
               Game selection page. Choose a learning adventure!
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {['Math Quest', 'Word Explorer', 'Science Lab', 'Coding Fun'].map(game => (
-                <div key={game} className="bg-gradient-to-r from-cyan-100 to-blue-100 p-6 rounded-xl shadow hover:shadow-lg cursor-pointer transition-all">
-                  <h3 className="text-xl font-bold text-indigo-800">{game}</h3>
-                  <p className="text-gray-700">Coming soon...</p>
+
+            <div className="flex flex-col gap-6">
+              {games.map(game => (
+                <div
+                  key={game.name}
+                  className="bg-gradient-to-r from-cyan-100 to-blue-100 p-6 rounded-xl shadow hover:shadow-lg cursor-pointer transition-all"
+                  onClick={() => router.push(game.path)}
+                >
+                  <h3 className="text-xl font-bold text-indigo-800">{game.name}</h3>
                 </div>
               ))}
             </div>
           </div>
-          
-          <button 
+
+          <button
             onClick={() => {
               localStorage.removeItem('miniMindsUser');
               router.push('/login');

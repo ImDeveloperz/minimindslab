@@ -271,6 +271,40 @@ def generate_feedback(difficulty: str = Query(...), tries: int = Query(...), tim
     except Exception as e:
         print(f"Error generating feedback: {e}")
         return {"feedback": "Great job! You're an awesome programmer!"}
+    
+    
+
+
+DATA_FILE = "./games/logic_path/logic_path.json"
+
+@app.get("/api/pattern-builder")
+async def get_pattern_builder_data():
+    """Get all pattern builder game data"""
+    try:
+        with open(DATA_FILE) as f:
+            data = json.load(f)
+        return data
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Game data file not found")
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail="Error parsing game data")
+
+@app.get("/api/pattern-builder/{difficulty}")
+async def get_pattern_builder_level(difficulty: str):
+    """Get pattern builder data for a specific difficulty level"""
+    try:
+        with open(DATA_FILE) as f:
+            data = json.load(f)
+        
+        if difficulty not in data["levels"]:
+            raise HTTPException(status_code=404, detail=f"Difficulty level '{difficulty}' not found")
+        
+        return data["levels"][difficulty]
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Game data file not found")
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail="Error parsing game data")
+
 # Run the application with uvicorn
 if __name__ == "__main__":
     import uvicorn

@@ -1,11 +1,9 @@
-
-
 "use client";
 
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function MemoryCard({ card, index, flipped, highlight, onClick, onHover }) {
+export default function MemoryCard({ card, index, flipped, highlight, onClick }) {
   return (
     <motion.div
       className={`relative w-24 h-32 md:w-28 md:h-36 
@@ -18,8 +16,6 @@ export default function MemoryCard({ card, index, flipped, highlight, onClick, o
       `}
       whileHover={{ scale: 1.1 }}
       onClick={onClick}
-      onMouseEnter={() => onHover(card.hint)}
-      onMouseLeave={() => onHover("")}
     >
       {flipped ? (
         <div className="p-2 text-sm md:text-base">{card.content}</div>

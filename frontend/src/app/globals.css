@@ -1,9 +1,7 @@
 @import "tailwindcss";
 /* styles/globals.css */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --purple-glow: 0 0 20px rgba(168, 85, 247, 0.5);
@@ -107,4 +105,343 @@ body {
   height: 100%;
   overflow: hidden;
   z-index: 0;
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Pattern Builder Game Specific Styles */
+.animate-bounce {
+  animation: bounce 0.5s;
+  animation-delay: calc(var(--delay, 0) * 0.1s);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Code block styling */
+.code-block {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+/* Difficulty levels color coding */
+.difficulty-easy {
+  background-color: #4ade80;
+}
+
+.difficulty-medium {
+  background-color: #facc15;
+}
+
+.difficulty-hard {
+  background-color: #ef4444;
+}
+
+/* Celebration animations */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.celebration-emoji {
+  display: inline-block;
+  animation: celebration-jump 0.5s ease infinite alternate;
+}
+
+@keyframes celebration-jump {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+/* MemoryGame.css */
+.memory-game-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4a6fa5;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-grid {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.difficulty-easy {
+  grid-template-columns: repeat(4, 150px);
+}
+
+.difficulty-medium {
+  grid-template-columns: repeat(4, 150px);
+}
+
+.difficulty-hard {
+  grid-template-columns: repeat(4, 150px);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.5rem;
+  color: #4a6fa5;
+}
+
+@media (max-width: 700px) {
+  .difficulty-easy {
+    grid-template-columns: repeat(2, 150px);
+  }
+  
+  .difficulty-medium, .difficulty-hard {
+    grid-template-columns: repeat(3, 100px);
+  }
+}
+
+/* Card.css */
+.card {
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  font-weight: bold;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #fff, #f5f5f5);
+  color: #333;
+  transform: rotateY(180deg);
+  border: 3px solid #6e8efb;
+}
+
+.card-symbol {
+  font-size: 2.5rem;
+}
+
+.card-content {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-content.concept {
+  color: #ff6b6b;
+}
+
+.card-content.meaning {
+  color: #1e90ff;
+}
+
+.card-hint {
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width: 90%;
+}
+
+.card.matched .card-inner {
+  transform: rotateY(180deg);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  animation: matched-animation 1s;
+}
+
+@keyframes matched-animation {
+  0% { transform: rotateY(180deg) scale(1); }
+  50% { transform: rotateY(180deg) scale(1.1); }
+  100% { transform: rotateY(180deg) scale(1); }
+}
+
+/* VictoryScreen.css */
+.victory-screen {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  animation: fade-in 0.5s;
+}
+
+.victory-content {
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: pop-in 0.5s;
+}
+
+.victory-title {
+  color: #ff9900;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.victory-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.victory-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  background-color: #f5f8ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.feedback-message {
+  background-color: #fff9c4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-style: italic;
+  color: #5d4037;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.play-again-btn {
+  padding: 12px 25px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.play-again-btn:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.8); opacity: 0; }
+  70% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Add App.css for the main container */
+/* App.css */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #bbdefb);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Additional responsive styles */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .difficulty-easy, .difficulty-medium, .difficulty-hard {
+    grid-template-columns: repeat(2, 120px);
+  }
+  
+  .card {
+    height: 120px;
+  }
+  
+  .card-content {
+    font-size: 0.9rem;
+  }
 }

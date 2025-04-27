@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import DifficultyGate from "../components/DifficultyGate";
-import { loadProgress } from "../../utils/sessionManager";
+import DifficultyGate from "@/components/DifficultyGate";
+import { loadProgress } from "@/utils/sessionManager";
 import { useRouter } from "next/navigation";
 
 export default function MemoryCardsDifficultyPage() {
