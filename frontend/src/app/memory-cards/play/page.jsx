@@ -1,4 +1,3 @@
-// Wrap your component in dynamic import to prevent it from being rendered server-side
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -6,26 +5,21 @@ import { useSearchParams } from "next/navigation";
 import GameBoard from "@/components/GameBoard";
 import { fetchCards } from "../../../utils/fetchCards";
 
-// Dynamic component with client-side rendering only
 export default function MemoryCardsPlayPage() {
+  const searchParams = useSearchParams(); // ✅ must be at the top
+  const difficulty = searchParams.get("difficulty") || "easy";
+
   const [mounted, setMounted] = useState(false);
+  const [cards, setCards] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Only render the component after it's mounted to avoid server-side rendering issues
-  if (!mounted) {
-    return null;
-  }
-
-  const searchParams = useSearchParams();
-  const difficulty = searchParams.get("difficulty") || "easy";
-
-  const [cards, setCards] = useState([]);
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
+    if (!mounted) return;
+
     const loadGame = async () => {
       setLoading(true);
       const fetchedCards = await fetchCards(difficulty);
@@ -34,7 +28,11 @@ export default function MemoryCardsPlayPage() {
     };
 
     loadGame();
-  }, [difficulty]);
+  }, [difficulty, mounted]);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-200 via-purple-200 to-pink-300 p-4">
